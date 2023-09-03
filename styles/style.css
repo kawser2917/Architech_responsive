@@ -65,6 +65,36 @@ nav li a{
     margin-top: 20px;
     width: 100%;
 }
+/* Main section Design */
+main{
+    max-width: 1140px;
+    margin: 70px auto;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.feature{
+    color: #FF900E;
+    font-weight: 700;
+}
 
 
 /* responsive style */
@@ -73,9 +103,17 @@ nav li a{
     header{
         padding:20px
     }
-    nav{
+    nav, .teams-container{
         flex-direction: column;
-    } 
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+ 
 }
 /* tablet devcies */
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -83,7 +121,7 @@ nav li a{
         padding:50px
     }
     
-    nav{
+    nav,.teams-container{
         flex-direction: column;
     }
 }
